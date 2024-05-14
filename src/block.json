@@ -1,0 +1,40 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "textomap/embed-map",
+	"version": "0.1.0",
+	"title": "Embed map",
+	"category": "embed",
+	"description": "Create and embed maps in seconds",
+	"example":{
+		"attributes": {
+			"preview": true
+		}
+	},
+	"keywords": [
+	    "text",
+	    "map",
+	    "AI"
+	],
+	"attributes": {
+		"content": {
+			"type": "string",
+			"source": "html",
+			"selector": "div"
+		},
+		"url": {
+			"type": "string",
+			"default": "https://www.textomap.com/"
+		},
+		"preview": {
+			"type": "string"
+		}
+	},
+	"supports": {
+		"html": false
+	},	
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./style-index.css",
+	"style": "file:./style-index.css",
+	"textdomain": "textomap"
+}
